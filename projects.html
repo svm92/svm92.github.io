@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <div id="navbar"></div>
+        <script>
+            setTimeout(function(){
+                $(function () {
+                    $("#navbar").find(".nav-item").eq(1).addClass(" active");
+                    $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "es/projects.html");
+                });
+            },
+                $("#navbar").load("navbar.html")
+            );
+        </script>
+        
+        <div class="project-bg-security">
+            
+            <br>
+
+            <div class="container">
+                <h2 class="project-type text-center">SECURITY</h2>
+            </div>
+
+            <br>
+
+            <div class="container project project-security">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">WHISPER</h3>
+                            <h4 class="project-subtitle text-center">Web application vulnerability scanner</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/webapp-scanner-report.png" alt="Web Application Scanner Sample Report">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">WHISPER <em>(Web Hazard & Infrastructure Scanning through automated Pentesting and Reporting)</em> is a vulnerability scanner for web applications. It was developed as a final undergraduate project in the University of Castilla-La Mancha.<br><br>It is written in Python. Using different security tools, it can scan a network, detect vulnerabilities in web applications, and generate a report detailing those vulnerabilities, all with minimal intervention from the user.<br><br>
+                            Link: <a href="https://github.com/svm92/tfg">https://github.com/svm92/tfg</a></p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Uses Nmap to scan and identify networks</li>
+                            <li class="list-group-item">Uses OWASP ZAP to apply payloads (attacks) on the target web application</li>
+                            <li class="list-group-item">Generates a report (using GitBook/Jinja2) detailing the found vulnerabilities</li>
+                            <li class="list-group-item">Can be controlled remotely via Raspberry Pi using VNC (Virtual Network Computing)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            
+        </div>
+
+        <div class="project-bg-game">
+            
+            <br><br>
+
+            <div class="container">
+                <h2 class="project-type text-center">VIDEO GAMES</h2>
+            </div>
+
+            <br>
+
+            <div class="container project project-game">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">Unnamed Strategy Game</h3>
+                            <h4 class="project-subtitle text-center">Turn-based strategy game</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/game-strategy.gif" alt="Unnamed Strategy Game gif">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">A strategy game for 2~30 players. Any number of these players can be controlled by a human (locally) or by an AI.<br><br>Each turn, players receive resources that they can trade for units or advantages. Units can move and attack other enemy units or bases.</p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Local multiplayer (2~30 players)</li>
+                            <li class="list-group-item">Simple AI (makes decisions based on available resources, implements A* pathfinding algorithm)</li>
+                            <li class="list-group-item">Simple map procedural generator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="container project project-game">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">Sketched Chroma</h3>
+                            <h4 class="project-subtitle text-center">2D platformer-puzzle game</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/game-platformer.gif" alt="Sketched Chroma gif">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">Platformer game focused on exploration of multiple interconnected areas (genre popularly known as <em>metroidvania</em>).<br><br>The player character can change their color to solve certain puzzles and gain access to different abilities.<br><br>
+                            Link: <a href="https://justacicada.itch.io/sketched-chroma">https://justacicada.itch.io/sketched-chroma</a></p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">8 large interconnected areas, offering the player some choice in what order to solve them</li>
+                            <li class="list-group-item">20+ "boss" enemies with more complex behaviors or simple AIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="container project project-game">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">Random Number God</h3>
+                            <h4 class="project-subtitle text-center">Card game</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/game-rng.gif" alt="Random Number God gif">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">Strategy/card game. The player fights off enemies using "dice" (random number generators) to achieve certain effects. A customizable deck of cards allows the player to change the effects of the dice or alter the chances of certain rolls.<br><br>
+                            Link (Windows, Linux): <a href="https://justacicada.itch.io/random-number-god">https://justacicada.itch.io/random-number-god</a><br>
+                            <br>Link (Android): <a href="https://play.google.com/store/apps/details?id=samuelVazquez.randomNumberGod">https://play.google.com/store/apps/details?id=samuelVazquez.randomNumberGod</a></p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Multi-platform (Windows, Linux, Android)</li>
+                            <li class="list-group-item">Editable deck of cards. Cards are generated procedurally</li>
+                            <li class="list-group-item">Enemies are generated randomly by combining different parts, resulting in different combinations of abilities and visual appearances</li>
+                            <li class="list-group-item">The player is allowed to progress indefinitely, with enemies always becoming progressively stronger</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            
+        </div>
+        
+        <div class="project-bg-misc">
+            
+            <br><br>
+            
+            <div class="container">
+                <h2 class="project-type text-center">MISCELLANEOUS</h2>
+            </div>
+
+            <br>
+
+            <div class="container project project-misc">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h2 class="project-name text-center">Procedural Music Generator</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="project-desc col-md-12 col-xs-12">Simple procedural generator for MIDI audio files. After analyzing a sizeable sample of human-created MIDI files, it can apply statistical analysis (using Markov Chains) to generate new MIDI files.<br><br>More specifically, it collects statistical information about the order and prevalence of music notes and tempos for each instrument, and then chooses random instruments and creates new MIDI tracks using the collected information.</p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Applies basic machine learning techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            
+            <div class="container project project-misc">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h2 class="project-name text-center">This very website</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="project-desc col-md-12 col-xs-12 text-center">Made with HTML/CSS/JavaScript and Bootstrap, without using templates.<br>I did the English translation myself.</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            
+        </div>
+        
+        <div id="footer"></div>
+        <script>
+            $(function () {
+                    $("#footer").load("footer.html");
+                });
+        </script>
+        
+    </body>
+</html>

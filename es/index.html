@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <base href="../">
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <div id="navbar"></div>
+        <script>
+            setTimeout(function(){
+                $(function () {
+                    $("#navbar").find(".nav-item").eq(0).addClass(" active");
+                    $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "index.html");
+                });
+            },
+                $("#navbar").load("es/navbar.html")
+            );
+        </script>
+        
+        <div class="container">
+
+            <div class="text-center introduction">Hola, soy Samuel Vázquez Morón, programador.</div>
+            <div class="text-center introduction-sub">Tengo conocimientos de:</div>
+
+            <div class="row">
+                <table class="col-xs-offset-0 col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6
+                knowledge">
+                    <tr>
+                        <th>Lenguajes de programación</th>
+                        <td>C#, C, Python, Java</td>
+                    </tr>
+                    <tr>
+                        <th>Entornos de programación</th>
+                        <td>Visual Studio, NetBeans, Eclipse, MinGW</td>
+                    </tr>
+                    <tr>
+                        <th>Control de versiones</th>
+                        <td>Github</td>
+                    </tr>
+                    <tr>
+                        <th>Desarrollo web</th>
+                        <td>HTLM5/CSS3/JavaScript, jQuery, Bootstrap</td>
+                    </tr>
+                    <tr>
+                        <th>Motores de juego</th>
+                        <td>Unity</td>
+                    </tr>
+                    <tr>
+                        <th>Máquinas virtuales</th>
+                        <td>Oracle VM VirtualBox</td>
+                    </tr>
+                    <tr>
+                        <th>Sistemas operativos</th>
+                        <td>Windows, Linux</td>
+                    </tr>
+                    <tr>
+                        <th>Otros</th>
+                        <td>Raspberry Pi, Arduino<br>Nociones básicas de SQLite</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row">
+                <div class="text-center introduction-additional">Otros datos de interés:</div>
+            </div>
+
+            <table class="col-xs-offset-0 col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6
+                knowledge">
+                <tr>
+                    <td>Inglés nivel alto (B1 acreditado por Universidad de Castilla-La Mancha). Traducción al inglés de esta misma web realizada por mí.</td>
+                </tr>
+                <tr>
+                    <td>Inscrito en Sistema Nacional de Garantía Juvenil.</td>
+                </tr>
+                <tr>
+                    <td>Permiso de conducir y vehículo propio.</td>
+                </tr>
+            </table>
+
+        </div>
+        
+        <br>
+        
+        <div id="footer"></div>
+        <script>
+            $(function () {
+                    $("#footer").load("es/footer.html");
+                });
+        </script>
+
+    </body>
+</html>

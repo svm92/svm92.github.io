@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <base href="../">
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <div id="navbar"></div>
+        <script>
+            setTimeout(function(){
+                $(function () {
+                    $("#navbar").find(".nav-item").eq(3).addClass(" active");
+                    $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "contact.html");
+                });
+            },
+                $("#navbar").load("es/navbar.html")
+            );
+        </script>
+        
+        <p class="text-center contact-name"><strong>Samuel Vázquez Morón</strong></p>
+        <div class="container">
+            <table class="col-xs-offset-5 contact-data">
+                <tr>
+                    <th class="text-right col-xs-1"><i class="fas fa-phone"></i></th>
+                    <td>645 56 77 58</td>
+                </tr>
+                <tr>
+                    <th class="text-right col-xs-1"><i class="fas fa-envelope"></i></th>
+                    <td>svm92@hotmail.es<br>svm92g@gmail.com</td>
+                </tr>
+                <tr>
+                    <th class="text-right col-xs-1"><i class="fas fa-map-marker-alt"></i></th>
+                    <td>Toledo, Castilla-La Mancha</td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>

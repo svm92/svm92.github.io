@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <base href="../">
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <title>Portfolio</title>
+    </head>
+    <body>
+        
+        <div id="navbar"></div>
+        
+        <script>
+            setTimeout(function(){
+                $(function () {
+                    $("#navbar").find(".nav-item").eq(2).addClass(" active");
+                    $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "education.html");
+                });
+            },
+                $("#navbar").load("es/navbar.html")
+            );
+        </script>
+        
+        <div class="edu-bg-academic">
+
+            <br>
+
+            <div class="container">
+                <h2 class="edu-type text-center">FORMACIÓN ACADÉMICA</h2>
+            </div>
+
+            <br>
+
+            <div class="container edu edu-academic">
+                <div class="grid">
+                    <div class="row">
+                        <div class="edu-header col-xs-offset-3 col-xs-6">
+                            <h3 class="edu-name text-center">Graduado en Ingeniería Electrónica Industrial y Automática</h3>
+                            <h4 class="edu-subtitle text-center">2017, Universidad de Castilla-La Mancha (Toledo)</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="edu-desc col-xs-offset-3 col-xs-5 text-center">Incluye prácticas con:</p>
+                    </div>
+                    <div class="row">
+                        <ul class="edu-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item col-xs-6 col-sm-4">MATLAB/Simulink</li>
+                            <li class="list-group-item col-xs-6 col-sm-4">AutoCAD</li>
+                            <li class="list-group-item col-xs-6 col-sm-4">OrCAD PSpice</li>
+                            <li class="list-group-item col-xs-6 col-sm-4">NI Multisim</li>
+                            <li class="list-group-item col-xs-6 col-sm-4">PLCs</li>
+                            <li class="list-group-item col-xs-6 col-sm-4">Bus CAN</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+
+        <div class="edu-bg-nonformal">
+
+            <br>
+
+            <div class="container">
+                <h2 class="edu-type text-center">FORMACIÓN NO REGLADA</h2>
+            </div>
+
+            <br>
+
+            <div class="container edu edu-nonformal">
+                <div class="grid">
+                    <div class="row">
+                        <div class="edu-header col-xs-offset-3 col-xs-6">
+                            <h3 class="edu-name text-center">Curso de Desarrollo de Videojuegos</h3>
+                            <h4 class="edu-subtitle text-center">2018, Toledo, a cargo de CEA (Confederación de Empresarios de Andalucía)</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="edu-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item col-xs-4">C#</li>
+                            <li class="list-group-item col-xs-4">.NET</li>
+                            <li class="list-group-item col-xs-4">Unity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+        
+        <div id="footer"></div>
+        <script>
+            $(function () {
+                    $("#footer").load("es/footer.html");
+                });
+        </script>
+        
+    </body>
+</html>
