@@ -21,17 +21,9 @@
     </head>
     <body>
         
+        <div id="page-index" hidden>3</div>
         <div id="navbar"></div>
-        <script>
-            setTimeout(function(){
-                $(function () {
-                    $("#navbar").find(".nav-item").eq(3).addClass(" active");
-                    $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "contact.html");
-                });
-            },
-                $("#navbar").load("es/navbar.html")
-            );
-        </script>
+        <script type="text/javascript" src="loadNavbar.js"></script>
         
         <p class="text-center contact-name"><strong>Samuel Vázquez Morón</strong></p>
         <div class="container">
