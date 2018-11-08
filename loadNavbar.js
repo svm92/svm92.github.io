@@ -18,13 +18,13 @@ var navItemExists = setInterval(function () {
         $("#navbar").find(".nav-item").eq(navItemId).addClass(" active");
         clearInterval(navItemExists);
     }
-}, 50);
+}, 100);
 
 var pageName = location.href.split("/").slice(-1); 
 
 // After the navbar loads, change destination of dropdown flag menu to opposite language page
 var dropdownExists = setInterval(function () {
-    if ($("#navbar").find(".dropdown-menu").length) {
+    if ($("#navbar").find(".dropdown-menu").find("a").eq(0).length) {
         
         if (language === "en") {
             $("#navbar").find(".dropdown-menu").find("a").eq(0).attr("href", "es/" + pageName);
@@ -34,4 +34,4 @@ var dropdownExists = setInterval(function () {
         
         clearInterval(dropdownExists);
     }
-}, 50);
+}, 100);
