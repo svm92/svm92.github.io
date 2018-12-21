@@ -158,7 +158,30 @@
             </div>
 
             <br>
-
+            
+            <div class="container project project-misc">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">Sudoku Solver</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/sudoku-solver.png" alt="Sudoku Solver png">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">Program capable of solving Sudoku puzzles, written in Java.<br><br>It uses a combination of constraint propagation and backtracking algorithms to quickly find the solution to any valid puzzle. It also implements slower, less efficient methods such as pure backtracking or genetic algorithms, for comparison purposes.<br><br>It can connect to a local MySQL database to save data related to completion times and methods, allowing a later analysis.</p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Median solving time of 20ms for standard 3x3 Sudoku</li>
+                            <li class="list-group-item">Can solve Sudokus of virtually any size (2x2, 4x4, etc.)</li>
+                            <li class="list-group-item">Connects to MySQL database to collect / analyze statistical information (to compare solving times under different algorithms, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <br><br>
+            
             <div class="container project project-misc">
                 <div class="grid">
                     <div class="row">
@@ -167,7 +190,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="project-desc col-md-12 col-xs-12">Simple procedural generator for MIDI audio files. After analyzing a sizeable sample of human-created MIDI files, it can apply statistical analysis (using Markov Chains) to generate new MIDI files.<br><br>More specifically, it collects statistical information about the order and prevalence of music notes and tempos for each instrument, and then chooses random instruments and creates new MIDI tracks using the collected information.</p>
+                        <p class="project-desc col-md-12 col-xs-12">Simple procedural generator for MIDI audio files, written in Python. After analyzing a sizeable sample of human-created MIDI files, it can apply statistical analysis (using Markov Chains) to generate new MIDI files.<br><br>More specifically, it collects statistical information about the order and prevalence of music notes and tempos for each instrument, and then chooses random instruments and creates new MIDI tracks using the collected information.</p>
                     </div>
                     <div class="row">
                         <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">

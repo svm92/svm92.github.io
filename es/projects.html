@@ -159,7 +159,30 @@
             </div>
 
             <br>
-
+            
+            <div class="container project project-misc">
+                <div class="grid">
+                    <div class="row">
+                        <div class="project-header col-xs-offset-3 col-xs-6">
+                            <h3 class="project-name text-center">Solucionador de Sudoku</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="project-img col-xs-12 col-md-6 col-md-push-6" src="img/sudoku-solver.png" alt="Sudoku Solver png">
+                        <p class="project-desc col-xs-12 col-md-6 col-md-pull-6">Programa capaz de resolver puzzles Sudoku, escrito en Java.<br><br>Usa una combinación de algoritmos de <em>propagación de restricciones</em> y <em>backtracking</em> para rápidamente encontrar la solución de cualquier puzzle válido. También implementa métodos más lentos y menos eficientes como <em>backtracking</em> puro o algoritmos genéticos, para comparar.<br><br>Puede conectar con una base de datos MySQL local para guardar datos acerca de lo tiempos y métodos de resolución, permitiendo un posterior análisis.</p>
+                    </div>
+                    <div class="row">
+                        <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
+                            <li class="list-group-item">Tiempo de resolución del Sudoku estándar 3x3 con una mediana de 20ms</li>
+                            <li class="list-group-item">Puede resolver Sudokus de cualquier tamaño (2x2, 4x4, etc.)</li>
+                            <li class="list-group-item">Conecta con una base de datos MySQL para guardar / analizar información estadística (para comparar tiempos de resolución usando diferentes algoritmos, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <br><br>
+            
             <div class="container project project-misc">
                 <div class="grid">
                     <div class="row">
@@ -168,7 +191,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="project-desc col-md-12 col-xs-12">Generador procedural sencillo de archivos de audio MIDI. Tras analizar una amplia muestra de archivos MIDI, es capaz de aplicar análisis estadístico (usando cadenas de Markov) para generar nuevos archivos MIDI.<br><br>Más específicamente, recoge información estadística sobre el orden y abundancia de las notas musicales y tempos para cada instrumento, y entonces elige instrumentos al azar y crea nuevas pistas de audio MIDI basándose en la información recogida.</p>
+                        <p class="project-desc col-md-12 col-xs-12">Generador procedural sencillo de archivos de audio MIDI, escrito en Python. Tras analizar una amplia muestra de archivos MIDI, es capaz de aplicar análisis estadístico (usando cadenas de Markov) para generar nuevos archivos MIDI.<br><br>Más específicamente, recoge información estadística sobre el orden y abundancia de las notas musicales y tempos para cada instrumento, y entonces elige instrumentos al azar y crea nuevas pistas de audio MIDI basándose en la información recogida.</p>
                     </div>
                     <div class="row">
                         <ul class="project-features list-group col-xs-offset-2 col-xs-8 text-center">
